@@ -6,7 +6,7 @@ from config import config
 class ButtonFrame(Frame):
     
     def __init__(self, app):
-        super().__init__(app, background="black")
+        super().__init__(app, **config["app"]["bg"])
         # add buttons and their callbacks dynamically
         for label, value in config["buttons"].items():
             button = Button(self, text=label, command=lambda label=label: self.callback(value), **config["button_options"])

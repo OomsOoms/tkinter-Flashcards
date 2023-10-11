@@ -16,5 +16,5 @@ class App(Tk):
         self.resizable(*config["app"]["resizable"])
 
         # Configure the background color
-        self.configure(bg="black")
+        self.configure(**config["app"]["bg"])
         

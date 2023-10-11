@@ -3,6 +3,7 @@ config = {
         "title": "Flashcards - Computer Hardware",
         "geometry": "500x500",
         "resizable": (False, False),
+        "bg": {"bg": "black"}
     },
     "buttons": {
         "Button 1": {
